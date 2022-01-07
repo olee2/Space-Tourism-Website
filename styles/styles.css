@@ -11,6 +11,10 @@ html{
     
 }
 
+html{
+    height: 100%;
+}
+
 body{
     background-image: url("../assets/home/background-home-desktop.jpg");
     background-size: cover;
@@ -226,8 +230,6 @@ section{
 @media only screen and (max-width:996px) {
     body{
         background-image: url("../assets/home/background-home-tablet.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
     }
 
     nav{
@@ -320,6 +322,10 @@ section{
     .change .bar3{
         transform: rotate(-45deg) translate(8px, -3px);
     }
+
+    .active{
+        border-bottom: none;
+    }
     
 }
 
@@ -328,8 +334,6 @@ section{
 
     body{
         background-image: url("../assets/home/background-home-mobile.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
     }
 
     h1{
@@ -372,7 +376,7 @@ section{
         height: 246px;
     }
 
-    .active{
-        border-bottom: none;
+    .nav-sub{
+        width: 60%;
     }
 } 
