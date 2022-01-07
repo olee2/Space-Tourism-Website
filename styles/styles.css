@@ -25,6 +25,7 @@ body{
 
 h1{
     font-size: 150px;
+    margin: 20px 0;
 }
 
 h2{
@@ -87,13 +88,14 @@ p{
     font-family: "barlow condensed";
     color: var(--light);
     margin:0;
-    color: var(--purple)
+    color: var(--purple);
+    line-height: 2;
 }
 
 h1, h2, h3, h4, .sub-h1{
     color: var(--light);
     font-family: bellefair;
-    margin: 0;
+
 }
 
 .flex{
@@ -219,6 +221,10 @@ ul{
     background-color: white;
 }
 
+section{
+    justify-content: space-between;
+}
+
 @media only screen and (max-width:996px) {
     body{
         background-image: url("../assets/home/background-home-tablet.jpg");
@@ -243,8 +249,15 @@ ul{
     }
 
     section{
+        margin-top: 100px;
         flex-direction: column;
+        justify-content: space-around;
+        height: 100%;
 
+    }
+
+    .heading{
+        text-align: center;
     }
 
 
@@ -314,10 +327,50 @@ ul{
 
 
 @media only screen and (max-width:600px){
+
+    *{
+        overflow: hidden;
+    }
     body{
         background-image: url("../assets/home/background-home-mobile.jpg");
         background-repeat: no-repeat;
         background-size: cover;
     }
+
+    h1{
+        font-size: 80px;
+    }
+
+    h5{
+        font-size: 16px;
+    }
     
+    p{
+        font-size: 15px;
+    }
+
+    section{
+        margin-top: 0px;
+        justify-content: space-between;
+    }
+
+    .heading{
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .container{
+        margin: 5px;
+    }
+
+    .inner{
+        width: 150px;
+        height: 150px;
+        font-size: 20px;
+    }
+
+    .outer{
+        width: 246px;
+        height: 246px;
+    }
 } 
