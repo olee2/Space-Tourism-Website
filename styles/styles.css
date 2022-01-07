@@ -9,7 +9,7 @@
 
 html{
     height: 100%;
-    overflow: visible;
+    overflow: scroll;
 }
 
 body{
