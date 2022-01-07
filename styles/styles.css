@@ -8,17 +8,17 @@
 }
 
 html{
-    height: 100%;
-    overflow: scroll;
+    
 }
 
-body{
+html, body{
     background-image: url("../assets/home/background-home-desktop.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     flex-direction: column;
     height: 100%;
     margin: 0;
+    overflow: scroll;
 }
 
 h1{
