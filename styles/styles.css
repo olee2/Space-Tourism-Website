@@ -82,11 +82,18 @@ strong{
 nav{
     background-color: rgba(255, 255, 255, 0.04);
     backdrop-filter: blur(86px);
-    -webkit-backdrop-filter: blur(86px);
     height: inherit;
     align-items: center;
     width: 60%;
 }
+
+@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+    .backdrop-blur {
+      background-color: rgba(255, 255, 255, .5);
+      -webkit-backdrop-filter: blur(2em);
+      backdrop-filter: blur(2em);
+    }
+  }
 
 header{
     height: 96px;
