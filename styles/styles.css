@@ -88,11 +88,12 @@ nav{
 }
 
 @supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
-    .backdrop-blur {
-      background-color: rgba(255, 255, 255, .5);
+    nav {
+        background-color: rgba(255, 255, 255, 0.04);
       -webkit-backdrop-filter: blur(2em);
       backdrop-filter: blur(2em);
     }
+    
   }
 
 header{
@@ -184,6 +185,15 @@ ul{
         width: 300px;
         height: 100%;
     }
+
+    @supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+    .nav-sub {
+        background-color: rgba(255, 255, 255, 0.04);
+      -webkit-backdrop-filter: blur(2em);
+      backdrop-filter: blur(2em);
+    }
+    
+  }
 
     .list-item:hover{
         border-bottom: none;
