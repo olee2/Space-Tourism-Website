@@ -48,12 +48,13 @@ main{
 }
 
 .header-line{
-    width: 40%;
-    height: 0.5px;
-    background-color: grey;
-    position: absolute;
+    width: 50%;
+    height: 1px;
+    background-color: var(--light);
+    position: fixed;
     display: block;
-    left: -35%;
+    left: -45%;
+    opacity: 0.2;
 }
 
 .sub-h2{
@@ -124,13 +125,14 @@ header{
 }
 
 .logo{
-    margin-left: 100px;
+    margin-left: 50px;
 }
 
 ul{
     height: inherit;
     margin: 0;
     width: 70%;
+    margin-left: 30px;
 }
 
 .nav-link{
@@ -173,6 +175,14 @@ ul{
 
     nav{
         width: fit-content;
+    }
+
+    ul{
+        margin-left: inherit;
+    }
+
+    .header-line{
+        display: none;
     }
 
 
