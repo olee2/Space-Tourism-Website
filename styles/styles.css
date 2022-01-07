@@ -11,11 +11,11 @@ html{
     
 }
 
-html, body{
+body{
     background-image: url("../assets/home/background-home-desktop.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: scroll;
+    background-attachment:fixed;
     flex-direction: column;
     height: 100%;
     margin: 0;
