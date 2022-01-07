@@ -7,12 +7,15 @@
     --light: #FFFFFF;
 }
 
-*{
-    margin: 0;
+html{
+    height: 100%;
+    overflow: hidden;
 }
 
 body{
     background-image: url("../assets/home/background-home-desktop.jpg");
+    flex-direction: column;
+    height: 100%;    
 }
 
 h1{
@@ -33,6 +36,12 @@ h4{
 
 h5, .sub-h1{
     font-size: 28px;
+    color: var(--purple);
+    font-family: "barlow condensed";
+}
+
+main{
+    flex:1;
 }
 
 .sub-h2{
@@ -42,6 +51,13 @@ h5, .sub-h1{
 
 p{
     font-size: 18px;
+    font-family: "barlow condensed";
+    color: var(--light);
+}
+
+h1, h2, h3, h4, .sub-h1{
+    color: var(--light);
+    font-family: bellefair;
 }
 
 .flex{
@@ -60,15 +76,33 @@ strong{
     margin-right: 10px;
 }
 
+nav{
+    background-color: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(86px);
+    height: inherit;
+    align-items: center;
+}
 
 header{
     height: 10vh;
+
 }
 
 .list-item{
     list-style: none;
-    padding: 10px;
+    padding: 0 10px;
     letter-spacing: 2.7px;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    margin-left: 100px;
+}
+
+ul{
+    height: inherit;
+    margin: 0;
 }
 
 .nav-link{
@@ -78,18 +112,21 @@ header{
     font-size: 16px;
     font-family: "barlow condensed";
     color: var(--light);
+
 }
 
 .ham{
     display: none;
     padding: 5px;
     cursor: pointer;
+    margin-right: 20px;
+    background-color: inherit;
     
 }
 
 .bar1, .bar2, .bar3{
     display: block;
-    width: 35px;
+    width: 25px;
     height: 3px;
     margin: 5px auto;
     background-color: #101010;
@@ -97,36 +134,55 @@ header{
     background-color: white;
 }
 
-@media only screen and (max-width:768px) {
-    *{
-        overflow: hidden;
+@media only screen and (max-width:996px) {
+
+    *{overflow: hidden;}
+
+    body{
+        background-image: url("../assets/home/background-home-tablet.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
+
     .nav-sub{
-        position: absolute;
+        position: fixed;
         top: 0vh;
         right: 0;
         flex-direction: column;
-        background-color: rgb(0,0,0,0.75);
-        border-radius: 0px 0px 0px 20px;
+        background-color: rgba(255,255,255, 0.04);
+        backdrop-filter: blur(86px);
         transition: transform 0.3s ease-in;
         transform: translate(100%);
-        height: 100%;
         justify-content: start;
         padding-top: 10vh;
         width: 300px;
+        height: 100%;
+ 
+
+
     }
 
+    nav{
+        width: inherit;
+        height: inherit;
+        align-items: none;
+        background-color: inherit;
+        backdrop-filter: none;
+    }
+
+    
     .nav-change{
         transform: translate(0%);
     }
 
     .ham{
         display: block;
+
     }
 
     .change .bar1{
-        transform: rotate(45deg) translate(8px, 3px);
+        transform: rotate(45deg) translate(8px, 3px); 
     }
 
     .change .bar2{
@@ -137,3 +193,12 @@ header{
         transform: rotate(-45deg) translate(8px, -3px);
     }
 }
+
+
+@media only screen and (max-width:600px){
+    body{
+        background-image: url("../assets/home/background-home-mobile.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+} 
