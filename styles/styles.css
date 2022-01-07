@@ -82,6 +82,7 @@ strong{
 nav{
     background-color: rgba(255, 255, 255, 0.04);
     backdrop-filter: blur(86px);
+    -webkit-backdrop-filter: blur(86px);
     height: inherit;
     align-items: center;
     width: 60%;
