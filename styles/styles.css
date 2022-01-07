@@ -328,7 +328,9 @@ section{
 
 @media only screen and (max-width:600px){
 
-
+    *{
+        overflow: scroll;
+    }
     body{
         background-image: url("../assets/home/background-home-mobile.jpg");
         background-repeat: no-repeat;
