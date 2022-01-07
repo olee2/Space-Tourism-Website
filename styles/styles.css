@@ -9,7 +9,6 @@
 
 html{
     height: 100%;
-    overflow: hidden;
 }
 
 body{
@@ -358,7 +357,7 @@ section{
     }
 
     .container{
-        margin: 5px;
+        margin: 10px;
     }
 
     .inner{
