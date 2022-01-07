@@ -373,4 +373,8 @@ section{
         width: 246px;
         height: 246px;
     }
+
+    .active{
+        border-bottom: none;
+    }
 } 
