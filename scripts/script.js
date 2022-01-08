@@ -1,3 +1,4 @@
+//Hamburger Menu
 const hamburger = document.querySelector(".ham");
 const navsub = document.querySelector(".nav-sub");
 hamburger.addEventListener('click', () => {
@@ -5,6 +6,7 @@ hamburger.addEventListener('click', () => {
     navsub.classList.toggle("nav-change")
 });
 
+//Active class
 const links = document.querySelectorAll(".list-item");
 
 for (let i = 0; i < links.length; i++) {
@@ -13,5 +15,4 @@ for (let i = 0; i < links.length; i++) {
       current[0].className = current[0].className.replace(" active", "");
       this.className += " active";
     });
-  } 
-console.log(links)
+  }
