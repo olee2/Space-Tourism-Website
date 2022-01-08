@@ -1,9 +1,11 @@
 //Hamburger Menu
 const hamburger = document.querySelector(".ham");
 const navsub = document.querySelector(".nav-sub");
+const body = document.querySelector("body");
 hamburger.addEventListener('click', () => {
     hamburger.classList.toggle("change")
     navsub.classList.toggle("nav-change")
+    body.classList.toggle("no-scroll")
 });
 
 //Active class

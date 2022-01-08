@@ -192,6 +192,10 @@ ul{
     background-color: white;
 }
 
+.no-scroll{
+    overflow: hidden;
+}
+
 /* HOME PAGE */
 
 .home{
