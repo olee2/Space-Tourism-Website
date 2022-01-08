@@ -131,8 +131,6 @@ nav{
     }
   }
 
-
-
 .list-item{
     list-style: none;
     padding: 0 10px;
@@ -189,7 +187,7 @@ ul{
     margin: 5px auto;
     background-color: #101010;
     transition: 0.4s;
-    background-color: white;
+    background-color: var(--purple);
 }
 
 .no-scroll{
@@ -252,10 +250,9 @@ ul{
 @media only screen and (max-width:996px) {
 
     .outer:hover{
-        background-color: transparent;
+        background-color: none;
         transition: 0.3s;   
     }
-
 
     nav{
         width: fit-content;
@@ -352,14 +349,7 @@ ul{
         height: 40px;
     }
     
-}
-
-
-@media only screen and (max-width:600px){
-
-    .home{
-        background-image: url("../assets/home/background-home-mobile.jpg");
-    }
+    
 
     h1{
         font-size: 80px;
@@ -405,6 +395,12 @@ ul{
         width: 60%;
     }
 } 
+
+@media only screen and (max-width: 600px){
+    .home{
+        background-image: url("../assets/home/background-home-mobile.jpg");
+    }
+}
 
 @media only screen and (max-height: 400px){
     .home{
