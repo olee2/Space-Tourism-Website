@@ -204,7 +204,7 @@ ul{
     width: 450px;
 }
 
-section{
+.home-section{
     justify-content: space-between;
 }
 
@@ -231,7 +231,7 @@ section{
 }
 
 @media only screen and (max-width: 1200px){
-    section{
+    .home-section{
         margin-top: 100px;
         flex-direction: column;
         justify-content: space-around;
@@ -370,7 +370,7 @@ section{
         font-size: 15px;
     }
 
-    section{
+    .home-section{
         margin-top: 0px;
         justify-content: space-around;
     }
@@ -408,7 +408,7 @@ section{
         background-position: center;
     }
 
-    .home-text{
+    .home-section{
         margin-top: 20px;
     }
 }
