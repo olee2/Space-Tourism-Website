@@ -407,4 +407,8 @@ section{
         background-attachment: fixed;
         background-position: center;
     }
+
+    .home-text{
+        margin-top: 20px;
+    }
 }
