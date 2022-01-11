@@ -329,7 +329,7 @@ ul{
 @media only screen and (max-width:996px) {
 
     .outer:hover{
-        background-color: none;
+        background-color: transparent;
         transition: 0.3s;   
     }
 
