@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="styles/styles.css">
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+<body class="flex destination">
+  <header class="flex justify-between align-center">
+    <a href="index.html"><img src="assets/shared/logo.svg" class="logo"></a>
+    
+    <nav class="navbar flex">
+      <div class="header-line"></div>
+      <ul class="nav-sub flex justify-between">
+        <li class="list-item"><a href="index.html" class="nav-link"><strong>00</strong>HOME</a></li>
+        <li class="list-item active"><a href="destination.html" class="nav-link "><strong>01</strong>DESTINATION</a></li>
+        <li class="list-item"><a href="#" class="nav-link"><strong>02</strong>CREW</a></li>
+        <li class="list-item"><a href="#" class="nav-link"><strong>03</strong>TECHNOLOGY</a></li>
+      </ul>
+      <div class="ham">
+        <span class="bar1"></span>
+        <span class="bar2"></span>
+        <span class="bar3"></span>
+      </div>
+    </nav>
+  </header>
+  <main class="flex column justify-center container">
+    <div class="h-something"><span class="inner-h">01</span>PICK YOUR DESTINATION</div>
+    <section class="flex align-center destination-section justify-around">
+      <div class=" flex justify-center align-center image">
+        <img src="assets/destination/image-moon.png">
+      </div>
+      <div class="flex column destination-container justify-start">
+        <div class="destination-nav flex">
+            <div id="moon" class="planet-link nav-link current-planet">MOON</div>
+            <div id="mars" class="planet-link nav-link">MARS</div>
+            <div id="europa" class="planet-link nav-link">EUROPA</div>
+            <div id="titan" class="planet-link nav-link">TITAN</div>
+        </div>
+      <div class="flex column">
+        <h2 class="destination-h2">MOON</h2>
+        <p class="description">See our planet as you’ve never seen it before. 
+            A perfect relaxing trip away to help regain perspective and come back refreshed. 
+            While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.
+        </p>
+      </div>
+        
+        <div class="destination-info flex justify-between">
+            <div class="avg-distance">
+                <div class="sub-h2">AVG. DISTANCE</div>
+                <div class="sub-h1 distance">384,400 km</div>
+            </div>
+            <div class="est-travel">
+                <div class="sub-h2">EST. TRAVEL TIME</div>
+                <div class="sub-h1 travel">3 days</div>
+            </div>
+        </div>
+      </div>
+    </section>
+    
+  </main>
+  
+  <script src="scripts/script.js"></script>
+</body>
+</html>

@@ -32,6 +32,7 @@ h1{
 
 h2{
     font-size: 100px;
+    margin: 30px 0;
 }
 
 h3{
@@ -65,13 +66,40 @@ p{
     line-height: 2;
 }
 
+.sub-h1{
+    font-size: 28px;
+    font-family: "barlow condensed";
+}
+
 .sub-h2{
-    font-size: 2.35px;
+    font-size: 14px;
     letter-spacing: 2.35px;
+}
+
+.sub-h1, .sub-h2, .h-something{
+    color: var(--light)
+}
+
+.h-something{
+    font-family: "barlow condensed";
+    font-size: 28px;
+    letter-spacing: 4px;
+    margin: 0 0 30px 60px;
+}
+
+.inner-h{
+    color:rgb(255, 255, 255, 0.25);
+    margin-right: 20px;
+    font-weight: 700;
+    
 }
 
 .justify-center{
     justify-content: center;
+}
+
+.justify-around{
+    justify-content: space-around;
 }
 
 .container{
@@ -88,6 +116,10 @@ p{
 
 .justify-between{
     justify-content: space-between;
+}
+
+.justify-start{
+    justify-content: flex-start;
 }
 
 .align-center{
@@ -185,7 +217,6 @@ ul{
     width: 25px;
     height: 3px;
     margin: 5px auto;
-    background-color: #101010;
     transition: 0.4s;
     background-color: var(--purple);
 }
@@ -203,11 +234,11 @@ ul{
 }
 
 .home-text{
-    width: 450px;
+    max-width: 450px;
 }
 
 .home-section{
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .inner{
@@ -232,7 +263,46 @@ ul{
     transition: 0.3s;   
 }
 
+/* Destination Page */
+
+.planet-link{
+    color: var(--light);
+    cursor: pointer;
+    padding-bottom: 10px;
+    margin-right: 40px;
+}
+
+.planet-link:hover{
+    transition: 0.15s;
+    border-bottom: solid 2px rgb(255, 255, 255, 0.5);
+}
+
+
+.current-planet{
+    border-bottom: solid 2px var(--light);
+}
+
+.test{
+    flex: 1;
+}
+
+.destination-container{
+    width: 400px;
+    height: 505px;
+}
+
+.destination-info{
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 1px solid rgb(255,255,255,0.2);
+}
+
+.destination{
+    background: url("../assets/destination/background-destination-desktop.jpg");
+}
+
 @media only screen and (max-width: 1200px){
+
     .home-section{
         margin-top: 100px;
         flex-direction: column;
@@ -242,10 +312,16 @@ ul{
 
     .home{
         background-image: url("../assets/home/background-home-tablet.jpg");
+        overflow-x: hidden ;
     }
 
-    
-}
+    .home-text{
+        text-align: center;
+    }
+
+    .container{
+        margin: 0;
+    }
 
 @media only screen and (max-width:996px) {
 
@@ -270,12 +346,57 @@ ul{
         margin-top: 0;
     }
 
-    .home-text{
+
+    .destination-section{
+        flex-direction: column;
+        height: 100%;
         text-align: center;
+        margin: 50px 50px 50px 50px ;
     }
 
+    .destination{
+        background-image: url("../assets/destination/background-destination-tablet.jpg");
+        background-size: 996px auto;
+    }
+
+    .destination-container{
+        width: auto;
+        max-width: 600px;
+        height: auto;
+    }
+
+    .destination main{
+        align-content: center;
+    }
+
+    .planet-link{
+        margin-right: 0;
+    }
+
+    .destination-nav{
+        justify-content: space-between;
+        width: 400px;
+        align-self: center;
+    }
     .logo{
         margin-left: 20px;
+    }
+
+    .h-something{
+        margin: 50px 0 0 20px ;
+    }
+
+    h2{
+        font-size: 80px;
+        margin: 20px 0;
+    }
+
+    .image img{
+        max-width: 350px;
+    }
+
+    .destination-info{
+        justify-content: space-around;
     }
 
 
@@ -399,6 +520,48 @@ ul{
 @media only screen and (max-width: 600px){
     .home{
         background-image: url("../assets/home/background-home-mobile.jpg");
+    }
+
+    .destination main{
+        align-items: center;
+    }
+
+    .planet-link{
+        font-size: 14px;
+    }
+
+    h2{
+        font-size: 56px;
+    }
+
+    p{
+        font-size: 15px;
+    }
+
+    .destination-info{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .h-something{
+        margin: 0;
+        font-size: 16px;
+    }
+
+    .destination-nav{
+        width: 250px;
+    }
+
+    .image img{
+        width: 200px;
+    }
+
+    .destination-section{
+        margin: 40px 10px;
+    }
+
+    .avg-distance{
+        margin-bottom: 30px;
     }
 }
 
