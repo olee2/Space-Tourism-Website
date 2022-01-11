@@ -59,7 +59,7 @@ for (let i = 0; i < destinations.length; i++) {
             description.innerHTML = object.description;
             distance.innerHTML = object.distance;
             travel.innerHTML = `<div class="sub-h1">${object.travel}</div>`;
-            image.innerHTML = `<img src="${object.images.png}">`
+            image.innerHTML = `<img src="${object.images.png} alt="${object.name}">`
           }
         }
     });
