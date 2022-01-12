@@ -64,9 +64,36 @@ for (let i = 0; i < destinations.length; i++) {
         }
     });
     });
-  }
+}
 
+const crew = document.querySelectorAll(".crew-link");
 
+for (let i = 0; i < crew.length; i++) {
+  crew[i].addEventListener("click", function() {
+    let current = document.querySelectorAll(".current-crew");
+    current[0].className = current[0].className.replace(" current-crew", "");
+    this.className += " current-crew";
+
+    readTextFile("data.json", function(text){
+      var data = JSON.parse(text); //parse JSON
+      let crewMember = document.querySelector(".current-crew");
+      let name = document.querySelector(".crew-name")
+      let role = document.querySelector(".role");
+      let bio = document.querySelector(".bio")
+      let image = document.querySelector(".image");
+      
+      for(let i = 0; i < data.destinations.length; i++){
+        if (crewMember.id == data.crew[i].name.split(" ")[0].toLowerCase() ){
+          let object = data.crew[i];
+          name.innerHTML = object.name.toUpperCase();
+          role.innerHTML = object.role;
+          bio.innerHTML = object.bio;
+          image.innerHTML = `<img src="${object.images.png}" alt="${object.name}">`
+        }
+      }
+  });
+  });
+}
 
 readTextFile("data.json", function(text){
     var data = JSON.parse(text); //parse JSON

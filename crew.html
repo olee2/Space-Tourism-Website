@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="styles/styles.css">
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+<body class="flex crew">
+  <header class="flex justify-between align-center">
+    <a href="index.html"><img src="assets/shared/logo.svg" class="logo" alt="Space Tourism Website Logo"></a>
+    
+    <nav class="navbar flex">
+      <div class="header-line"></div>
+      <ul class="nav-sub flex justify-between">
+        <li class="list-item"><a href="index.html" class="nav-link"><strong>00</strong>HOME</a></li>
+        <li class="list-item"><a href="destination.html" class="nav-link "><strong>01</strong>DESTINATION</a></li>
+        <li class="list-item active"><a href="#" class="nav-link"><strong>02</strong>CREW</a></li>
+        <li class="list-item"><a href="#" class="nav-link"><strong>03</strong>TECHNOLOGY</a></li>
+      </ul>
+      <div class="ham">
+        <span class="bar1"></span>
+        <span class="bar2"></span>
+        <span class="bar3"></span>
+      </div>
+    </nav>
+  </header>
+  <main class="flex column justify-center justify-end">
+    <section class="flex crew-section justify-between container">
+        <div class="crew-container flex column justify-between">
+            <div class="h-something"><span class="inner-h">01</span>MEET YOUR CREW</div>
+            <div class="crew-details">
+                <h4 class="role">COMMANDER</h4>
+                <h3 class="crew-name">DOUGLAS HURLEY</h3>
+                <p class="bio">Douglas Gerald Hurley is an American engineer, 
+                    former Marine Corps pilot and former NASA astronaut. 
+                    He launched into space for the third time as commander of Crew Dragon Demo-2.</p>
+            </div>
+            <div class="crew-slider flex">
+                <div id="douglas" class="crew-link current-crew"></div>
+                <div id="mark" class="crew-link"></div>
+                <div id="victor" class="crew-link"></div>
+                <div id="anousheh"class="crew-link"></div>
+            </div>
+      </div>
+      <div class="image align-end">
+        <img src="assets/crew/image-douglas-hurley.png" alt="Commander Douglas Hurley">
+      </div>
+    </section>
+    
+  </main>
+  
+  <script src="scripts/script.js"></script>
+</body>
+</html>

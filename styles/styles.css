@@ -90,7 +90,6 @@ p{
     color:rgb(255, 255, 255, 0.25);
     margin-right: 20px;
     font-weight: 700;
-    
 }
 
 .justify-center{
@@ -101,9 +100,6 @@ p{
     justify-content: space-around;
 }
 
-.container{
-    margin: 0 100px;
-}
 
 .column{
     flex-direction: column;
@@ -121,9 +117,27 @@ p{
     justify-content: flex-start;
 }
 
+.justify-end{
+    justify-content: flex-end;
+}
+
 .align-center{
     align-items: center;
 }
+
+.align-end{
+    align-self: flex-end;
+}
+
+.align-self-center{
+    align-self: center;
+}
+
+.container{
+    width: 1100px;
+    align-self: center;
+}
+
 
 /* Header + Nav */
 
@@ -264,6 +278,7 @@ ul{
 
 /* Destination Page */
 
+
 .planet-link{
     color: var(--light);
     cursor: pointer;
@@ -304,29 +319,90 @@ ul{
     background: url("../assets/destination/background-destination-desktop.jpg");
 }
 
+/* Crew Page */
+
+.crew{
+    background-image: url(../assets/crew/background-crew-desktop.jpg);
+    background-size: cover;
+}
+
+.crew-section{
+    height: 100%;
+}
+
+.crew p{
+    max-width: 500px;
+}
+
+.crew h4{
+    opacity: 0.5;
+    margin: 0;
+}
+
+.crew h3{
+    margin: 20px 0;
+}
+
+.crew .image img{
+    max-height: 550px;
+}
+
+.crew .image {
+    justify-content: flex-end;
+}
+
+.crew .h-something{
+    margin: 50px 0 0 0;
+}
+
+.crew-slider{
+    margin-bottom: 100px;
+}
+
+.crew-link{
+    height: 15px;
+    width: 15px;
+    background-color: var(--light);
+    margin-right: 25px;
+    border-radius: 50%;
+    opacity: 17%;
+    cursor: pointer;
+}
+
+.crew-link:hover{
+    opacity: 50%;
+}
+
+.current-crew{
+    opacity: 1;
+}
+
 @media only screen and (max-width: 1200px){
+
+    .container{
+        width: 100%;
+        max-width: none;
+        justify-content: space-around;
+    }
 
     .home-section{
         margin-top: 100px;
-        flex-direction: column;
+        
         justify-content: space-around;
         height: 100%;
     }
 
     .home{
-        background-image: url("../assets/home/background-home-tablet.jpg");
-        overflow-x: hidden ;
-    }
-
-    .home-text{
-        text-align: center;
-    }
-
-    .container{
-        margin: 0;
+        background-position: right;
     }
 
 @media only screen and (max-width:996px) {
+
+  
+
+    .width-100{
+        width: 100%;
+    }
 
     .outer:hover{
         background-color: transparent;
@@ -349,17 +425,73 @@ ul{
         margin-top: 0;
     }
 
-
-    .destination-section{
+    .container{
         flex-direction: column;
         height: 100%;
         text-align: center;
-        margin: 50px 50px 50px 50px ;
+        align-items: center;
+        max-width: none;
+        width: 100%;
+    }
+
+    .home{
+        background-image: url("../assets/home/background-home-tablet.jpg");
     }
 
     .destination{
         background-image: url("../assets/destination/background-destination-tablet.jpg");
         background-size: 996px auto;
+    }
+
+    .destination-section{
+        margin-top: 50px;
+    }
+
+    .crew{
+        background-image: url("../assets/crew/background-crew-tablet.jpg");
+    }
+
+    .crew p{
+        max-width: 550px;
+    }
+
+    .crew .image{
+        width: 100%;
+    }
+
+    .crew .image img{
+        max-width: none;
+        height: 100%;
+    }
+
+    .crew-slider{
+        justify-content: space-between;
+        align-self: center;
+        width: 100px;
+    }
+
+    .crew-link{
+        margin: 0;
+    }
+
+    .crew-details{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    .crew-container{
+        width: 100%;
+    }
+
+    .crew-slider{
+        margin: 50px 0;
+    }
+
+    .h-something{
+        align-self: flex-start;
+        padding-left: 20px;
     }
 
     .destination-container{
@@ -370,6 +502,7 @@ ul{
 
     .destination main{
         align-content: center;
+        justify-content: center;
     }
 
     .planet-link{
@@ -387,7 +520,7 @@ ul{
 
     h2{
         font-size: 80px;
-        margin: 20px 0;
+        
     }
 
     .image img{
@@ -396,6 +529,10 @@ ul{
 
     .destination-info{
         justify-content: space-around;
+    }
+
+    .h-something{
+        margin: 0 0 50px 0px;
     }
 
 }
