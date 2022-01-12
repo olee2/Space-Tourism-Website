@@ -335,7 +335,7 @@ ul{
 }
 
 .crew h4{
-    opacity: 0.5;
+    color:rgb(255, 255, 255, 0.5);
     margin: 0;
 }
 
@@ -362,10 +362,9 @@ ul{
 .crew-link{
     height: 15px;
     width: 15px;
-    background-color: var(--light);
+    background-color: rgb(255, 255, 255, 0.17);
     margin-right: 25px;
     border-radius: 50%;
-    opacity: 17%;
     cursor: pointer;
 }
 
@@ -374,7 +373,7 @@ ul{
 }
 
 .current-crew{
-    opacity: 1;
+    background-color: var(--light);
 }
 
 @media only screen and (max-width: 1200px){
@@ -397,10 +396,6 @@ ul{
     }
 
 @media only screen and (max-width:996px) {
-
-    html{
-        overflow: hidden;
-    }
 
     .width-100{
         width: 100%;
@@ -457,15 +452,6 @@ ul{
         max-width: 550px;
     }
 
-    .crew .image{
-        width: 100%;
-    }
-
-    .crew .image img{
-        max-width: none;
-        height: 100%;
-    }
-
     .crew-slider{
         justify-content: space-between;
         align-self: center;
@@ -485,15 +471,28 @@ ul{
 
     .crew-container{
         width: 100%;
+        flex: 1;
     }
 
     .crew-slider{
         margin: 50px 0;
     }
 
+    .crew .image{
+        align-self: center;
+        justify-content: flex-end;
+     
+    }
+
+    .crew .image img{
+        max-height: 470px;
+    }
+
+  
     .h-something{
         align-self: flex-start;
         padding-left: 20px;
+        margin: 0 0 50px 0px;
     }
 
     .destination-container{
@@ -525,16 +524,12 @@ ul{
         
     }
 
-    .image img{
+    .destination img{
         max-width: 350px;
     }
 
     .destination-info{
         justify-content: space-around;
-    }
-
-    .h-something{
-        margin: 0 0 50px 0px;
     }
 
 }
@@ -652,6 +647,15 @@ ul{
 
     .nav-sub{
         width: 60%;
+    }
+
+    .h-something{
+        align-self: center;
+        padding: 0;
+    }
+
+    .crew .h-something{
+        margin: 0;
     }
 } 
 
