@@ -32,7 +32,7 @@ h1{
 
 h2{
     font-size: 100px;
-    margin: 30px 0;
+    margin: 10px 0 ;
 }
 
 h3{
@@ -83,7 +83,7 @@ p{
     font-family: "barlow condensed";
     font-size: 28px;
     letter-spacing: 4px;
-    margin: 0 0 0 0px;
+    margin: 50px 0 0 0px;
 }
 
 .inner-h{
@@ -136,6 +136,7 @@ p{
 .container{
     width: 1100px;
     align-self: center;
+    height: 100%;
 }
 
 
@@ -283,7 +284,7 @@ ul{
     color: var(--light);
     cursor: pointer;
     padding-bottom: 10px;
-    margin-right: 40px;
+    margin: 0 40px 0 0;
 }
 
 .planet-link:hover{
@@ -302,7 +303,7 @@ ul{
 
 .destination-container{
     width: 400px;
-    height: 505px;
+    height: 445px;
 }
 
 .destination-info{
@@ -352,7 +353,7 @@ ul{
 }
 
 .crew-slider{
-    margin-bottom: 100px;
+    margin: 100px 0;
 }
 
 .crew-link{
@@ -371,6 +372,8 @@ ul{
 .current-crew{
     background-color: var(--light);
 }
+
+
 
 @media only screen and (max-width: 1200px){
 
@@ -659,9 +662,6 @@ ul{
     .h-something{
         align-self: center;
         padding: 0;
-    }
-
-    .crew .h-something{
         margin: 0;
     }
 
@@ -669,6 +669,15 @@ ul{
 } 
 
 @media only screen and (max-width: 600px){
+
+    h3{
+        font-size: 24px;
+    }
+
+    h4{
+        font-size: 16px;
+    }
+
     .home{
         background-image: url("../assets/home/background-home-mobile.jpg");
     }
@@ -709,17 +718,18 @@ ul{
 
     .crew{
         background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../assets/crew/background-crew-mobile.jpg");
+        background-size: auto 1000px;
+        background-repeat: no-repeat;
     }
 
     .crew .image img{
-        max-height: 300px;
+        max-height: 350px;
         width: 100%;
     }
 
     .crew-container{
         flex:1;
         flex-direction: column-reverse;
-        justify-content: space-evenly;
         border-top: 1px solid rgb(255,255,255,0.2);
     }
 
@@ -731,6 +741,17 @@ ul{
         flex-direction: column-reverse;
         margin: 0 100px;
     }
+
+    .crew-slider{
+        margin: 40px 0;
+    }
+
+    .crew p{
+        padding: 0 20px 20px 20px;
+    }
+    
+
+
 
 }
 

@@ -42,6 +42,7 @@ for (let i = 0; i < destinations.length; i++) {
       let current = document.querySelectorAll(".current-planet");
       current[0].className = current[0].className.replace(" current-planet", "");
       this.className += " current-planet";
+      
 
       readTextFile("data.json", function(text){
         var data = JSON.parse(text); //parse JSON
@@ -51,6 +52,7 @@ for (let i = 0; i < destinations.length; i++) {
         let distance = document.querySelector(".distance");
         let travel = document.querySelector(".travel");
         let image = document.querySelector(".image");
+        
     
         for(let i = 0; i < data.destinations.length; i++){
           if (destination.id == data.destinations[i].name.toLowerCase() ){
@@ -73,6 +75,9 @@ for (let i = 0; i < crew.length; i++) {
     let current = document.querySelectorAll(".current-crew");
     current[0].className = current[0].className.replace(" current-crew", "");
     this.className += " current-crew";
+    let container = document.querySelector(".crew-section");
+    container.classList.toggle("animate__fadeIn");
+    
 
     readTextFile("data.json", function(text){
       var data = JSON.parse(text); //parse JSON
@@ -82,13 +87,16 @@ for (let i = 0; i < crew.length; i++) {
       let bio = document.querySelector(".bio")
       let image = document.querySelector(".image");
       
+    
+      
       for(let i = 0; i < data.destinations.length; i++){
         if (crewMember.id == data.crew[i].name.split(" ")[0].toLowerCase() ){
           let object = data.crew[i];
           name.innerHTML = object.name.toUpperCase();
-          role.innerHTML = object.role;
+          role.innerHTML = object.role.toUpperCase();
           bio.innerHTML = object.bio;
           image.innerHTML = `<img src="${object.images.png}" alt="${object.name}">`
+          
         }
       }
   });
