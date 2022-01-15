@@ -755,7 +755,7 @@ ul{
 
 }
 
-@media only screen and (max-height: 600px){
+@media only screen and (max-height: 450px){
     .home, .destination, .crew{
         background-position: center;
         background-size: 1150px auto;
