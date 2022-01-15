@@ -1,13 +1,4 @@
-//Hamburger Menu
-const hamburger = document.querySelector(".ham");
-const navsub = document.querySelector(".nav-sub");
-const body = document.querySelector("body");
 
-hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle("change")
-    navsub.classList.toggle("nav-change")
-    body.classList.toggle("no-scroll")
-});
 
 //Active class
 /*
@@ -22,6 +13,7 @@ for (let i = 0; i < links.length; i++) {
   }
 */
 
+//Function for reading the JSON-file
 function readTextFile(file, callback) {
   var rawFile = new XMLHttpRequest();
   rawFile.overrideMimeType("application/json");
@@ -34,45 +26,27 @@ function readTextFile(file, callback) {
   rawFile.send(null);
 }
 
-/* Destination NAV */
-const destinations = document.querySelectorAll(".planet-link");
-
-for (let i = 0; i < destinations.length; i++) {
-    destinations[i].addEventListener("click", function() {
-      let current = document.querySelectorAll(".current-planet");
-      current[0].className = current[0].className.replace(" current-planet", "");
-      this.className += " current-planet";
-      
-
-      readTextFile("data.json", function(text){
-        var data = JSON.parse(text); //parse JSON
-        let destination = document.querySelector(".current-planet");
-        let h2 = document.querySelector(".destination-h2");
-        let description = document.querySelector(".description");
-        let distance = document.querySelector(".distance");
-        let travel = document.querySelector(".travel");
-        let image = document.querySelector(".image");
-        
+function changeDestination(){
+  readTextFile("data.json", function(text){
+    var data = JSON.parse(text); //parse JSON
+    let destination = document.querySelector(".current-planet");
+    let h2 = document.querySelector(".destination-h2");
+    let description = document.querySelector(".description");
+    let distance = document.querySelector(".distance");
+    let travel = document.querySelector(".travel");
+    let image = document.querySelector(".image");
     
-        for(let i = 0; i < data.destinations.length; i++){
-          if (destination.id == data.destinations[i].name.toLowerCase() ){
-            let object = data.destinations[i];
-            h2.innerHTML = object.name.toUpperCase()
-            description.innerHTML = object.description;
-            distance.innerHTML = object.distance;
-            travel.innerHTML = `<div class="sub-h1">${object.travel}</div>`;
-            image.innerHTML = `<img src="${object.images.png}" alt="${object.name}">`
-          }
-        }
-    });
-    });
-}
-
-const crew = document.querySelectorAll(".crew-link");
-let container = document.querySelector(".crew-section");
-
-function remove(){
-  container.classList.remove("animate__fadeIn");
+    for(let i = 0; i < data.destinations.length; i++){
+      if (destination.id == data.destinations[i].name.toLowerCase() ){
+        let object = data.destinations[i];
+        h2.innerHTML = object.name.toUpperCase()
+        description.innerHTML = object.description;
+        distance.innerHTML = object.distance;
+        travel.innerHTML = `<div class="sub-h1">${object.travel}</div>`;
+        image.innerHTML = `<img src="${object.images.png}" alt="${object.name}">`
+      }
+    }
+});
 }
 
 function changeCrew(){
@@ -96,16 +70,38 @@ function changeCrew(){
   });
 }
 
+//Hamburger Menu
+const hamburger = document.querySelector(".ham");
+const navsub = document.querySelector(".nav-sub");
+const body = document.querySelector("body");
+
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle("change")
+    navsub.classList.toggle("nav-change")
+    body.classList.toggle("no-scroll")
+});
+
+// Destination NAV
+const destinations = document.querySelectorAll(".planet-link");
+for (let i = 0; i < destinations.length; i++) {
+    destinations[i].addEventListener("click", function() {
+      let current = document.querySelectorAll(".current-planet");
+      current[0].className = current[0].className.replace(" current-planet", "");
+      this.className += " current-planet";
+      changeDestination();
+    });
+}
+
+// Crew Slider
+const crew = document.querySelectorAll(".crew-link");
 for (let i = 0; i < crew.length; i++) {
   crew[i].addEventListener("click", function() {
     let current = document.querySelectorAll(".current-crew");
     current[0].className = current[0].className.replace(" current-crew", "");
     this.className += " current-crew";
-    container.classList.add("animate__fadeIn");
     changeCrew();
   });
 }
-
 
 readTextFile("data.json", function(text){
     var data = JSON.parse(text); //parse JSON
