@@ -755,12 +755,30 @@ ul{
 
 }
 
-@media only screen and (max-height: 400px){
-    .home{
+@media only screen and (max-height: 450px){
+    .home, .destination, .crew{
         background-position: center;
+        background-size: 1150px auto;
+        height: auto;
     }
 
-    .home-section{
-        margin-top: 20px;
+    .home section, .destination section, .crew section{
+        margin-top: 40px;
     }
+
+    .container{
+        justify-content: unset;
+    }
+
+    .crew .image img{
+        max-height: 300px;
+    }
+
+    .crew-slider{
+        margin: 40px 0;
+    }
+
+   
+
+
 }
