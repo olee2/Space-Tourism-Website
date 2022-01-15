@@ -395,7 +395,6 @@ ul{
     }
 
 @media only screen and (max-width:996px) {
-
     .width-100{
         width: 100%;
     }
@@ -443,6 +442,7 @@ ul{
         margin-top: 50px;
     }
 
+
     .crew{
         background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../assets/crew/background-crew-tablet.jpg");
 
@@ -457,7 +457,6 @@ ul{
         align-self: center;
         width: 120px;
         margin: 0;
-
     }
 
     .crew-link{
@@ -482,7 +481,6 @@ ul{
         justify-content: flex-end;
         flex: 3;
         max-width: 100%;
-     
     }
 
     .crew .image img{
@@ -494,7 +492,10 @@ ul{
         width: 10px;
     }
 
-  
+    .crew-slider{
+        margin: 40px 0;
+    }
+
     .h-something{
         align-self: flex-start;
         padding-left: 20px;
@@ -518,16 +519,17 @@ ul{
 
     .destination-nav{
         justify-content: space-between;
-        width: 400px;
+        width: 300px;
         align-self: center;
     }
+
     .logo{
         margin-left: 20px;
     }
 
     h2{
         font-size: 80px;
-        
+        margin: 20px 0;
     }
 
     h3{
@@ -544,6 +546,10 @@ ul{
 
     .destination-info{
         justify-content: space-around;
+    }
+
+    .destination p{
+        padding: 0 40px;
     }
 
 }
@@ -687,6 +693,14 @@ ul{
         font-size: 16px;
     }
 
+    .destination{
+        height: auto;
+    }
+
+    .destination p{
+        padding: 0 20px;
+    }
+
     .destination main{
         align-items: center;
     }
@@ -750,6 +764,9 @@ ul{
         padding: 0 20px 20px 20px;
     }
 
+    .destination-container{
+        margin: 40px 0;
+    }
 }
 
 @media only screen and (max-height: 450px){
