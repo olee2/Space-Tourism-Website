@@ -723,7 +723,7 @@ ul{
     }
 
     .crew .image img{
-        max-height: 350px;
+        max-height: 250px;
         
     }
 
@@ -749,9 +749,6 @@ ul{
     .crew p{
         padding: 0 20px 20px 20px;
     }
-    
-
-
 
 }
 
