@@ -755,7 +755,7 @@ ul{
 
 }
 
-@media only screen and (max-height: 450px){
+@media only screen and (max-height: 600px){
     .home, .destination, .crew{
         background-position: center;
         background-size: 1150px auto;
@@ -770,7 +770,11 @@ ul{
         justify-content: unset;
     }
 
-    .crew .image img{
+   .destination-container{
+       margin: 40px 0;
+   }
+
+    .crew .image img, .destination img{
         max-height: 300px;
     }
 
