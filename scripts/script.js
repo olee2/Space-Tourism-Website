@@ -70,6 +70,31 @@ function changeCrew(){
   });
 }
 
+function changeTech(){
+  readTextFile("data.json", function(text){
+    var data = JSON.parse(text); //parse JSON
+    let tech = document.querySelector(".active-tech");
+    let techH3 = document.querySelector(".tech-h3");
+    let techP = document.querySelector(".tech-info");
+    let image = document.querySelector(".image")
+
+    for(let i = 0; i < data.technology.length; i++){
+      if (tech.id == data.technology[i].name.split(" ")[0].toLowerCase() ){
+        let object = data.technology[i];
+        techH3.innerHTML = object.name.toUpperCase();
+        techP.innerHTML = object.description.toUpperCase();
+        if(window.screen.width > 996){
+          image.innerHTML = `<img src="${object.images.portrait}" alt="${object.name}">`
+        }else{
+          image.innerHTML = `<img src="${object.images.landscape}" alt="${object.name}">`
+        }
+      }
+    }
+  });
+}
+
+console.log(window.screen.width)
+
 //Hamburger Menu
 const hamburger = document.querySelector(".ham");
 const navsub = document.querySelector(".nav-sub");
@@ -100,6 +125,17 @@ for (let i = 0; i < crew.length; i++) {
     current[0].className = current[0].className.replace(" current-crew", "");
     this.className += " current-crew";
     changeCrew();
+  });
+}
+
+// Tech Slider
+const tech = document.querySelectorAll(".tech-link");
+for (let i = 0; i < tech.length; i++) {
+  tech[i].addEventListener("click", function() {
+    let current = document.querySelectorAll(".active-tech");
+    current[0].className = current[0].className.replace(" active-tech", "");
+    this.className += " active-tech";
+    changeTech();
   });
 }
 

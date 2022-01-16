@@ -19,6 +19,7 @@ body{
 
 main{
     flex:1;
+    margin: 0 50px;
 }
 
 a{
@@ -356,6 +357,8 @@ ul{
     margin: 100px 0;
 }
 
+
+
 .crew-link{
     height: 15px;
     width: 15px;
@@ -372,7 +375,66 @@ ul{
 .current-crew{
     background-color: var(--light);
 }
+/* Technology Page */
 
+.technology{
+    background-image: url("../assets/technology/background-technology-desktop.jpg");
+    background-size: cover;
+}
+
+.tech-slider{
+    color: var(--light);
+    font-family: bellefair;
+    font-size: 32px;
+    margin-right: 50px;
+}
+
+.tech-slider :nth-child(2){
+    margin: 35px 0;
+}
+
+.tech-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(255, 255, 255, 0.25);
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    cursor: pointer;
+}
+
+.tech-link:hover{
+    border-color: rgb(255, 255, 255, 1);
+}
+
+.active-tech{
+    background-color: var(--light);
+    color: var(--dark);
+}
+
+.technology .image{
+    position: absolute;
+    right: 0;
+    height: 70%;
+    margin-bottom: 20px;
+}
+
+.technology img{
+    height: 100%;
+}
+
+.tech-info{
+    max-width: 50%;
+}
+
+.tech-h3{
+    margin: 15px 0;
+}
+
+@media only screen and (max-width: 1440px){
+    
+}
 
 
 @media only screen and (max-width: 1200px){
@@ -380,12 +442,11 @@ ul{
     .container{
         width: 100%;
         max-width: none;
-        justify-content: space-around;
+        justify-content: space-between;
     }
 
     .home-section{
         margin-top: 100px;
-        
         justify-content: space-around;
         height: 100%;
     }
@@ -395,6 +456,10 @@ ul{
     }
 
 @media only screen and (max-width:996px) {
+    main{
+        margin: 0 20px;
+    }
+
     .width-100{
         width: 100%;
     }
@@ -427,6 +492,7 @@ ul{
         align-items: center;
         max-width: none;
         width: 100%;
+        margin-top: 50px;
     }
 
     .home{
@@ -437,11 +503,6 @@ ul{
         background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../assets/destination/background-destination-tablet.jpg");
         background-size: 996px auto;
     }
-
-    .destination-section{
-        margin-top: 50px;
-    }
-
 
     .crew{
         background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../assets/crew/background-crew-tablet.jpg");
@@ -498,7 +559,6 @@ ul{
 
     .h-something{
         align-self: flex-start;
-        padding-left: 20px;
         font-size: 20px;
     }
 
@@ -506,11 +566,6 @@ ul{
         width: auto;
         max-width: 600px;
         height: auto;
-    }
-
-    .destination main{
-        align-content: center;
-        justify-content: center;
     }
 
     .planet-link{
@@ -795,8 +850,4 @@ ul{
     .crew-slider{
         margin: 40px 0;
     }
-
-   
-
-
 }
