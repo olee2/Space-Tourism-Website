@@ -944,7 +944,9 @@ ul{
     }
 
     .technology{
-        background-image: url(../assets/technology/background-technology-tablet.jpg);
+        background-image: url(../assets/technology/background-technology-mobile.jpg);
+        background-size: auto 800px;
+        background-repeat: no-repeat;
     }
 }
 
