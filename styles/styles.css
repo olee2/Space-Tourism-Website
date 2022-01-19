@@ -876,10 +876,12 @@ ul{
 
     .destination .image{
         margin-bottom: 30px;
+        max-width: 270px;
+        align-self: center;
     }
 
     .destination .image img{
-        width: 200px;
+        max-width: 100%;
     }
 
     .destination-section{
