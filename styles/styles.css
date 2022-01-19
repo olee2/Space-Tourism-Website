@@ -139,7 +139,6 @@ p{
     height: 100%;
 }
 
-
 /* Header + Nav */
 
 header{
@@ -278,7 +277,6 @@ ul{
 
 /* Destination Page */
 
-
 .planet-link{
     color: var(--light);
     cursor: pointer;
@@ -290,7 +288,6 @@ ul{
     transition: 0.15s;
     border-bottom: solid 2px rgb(255, 255, 255, 0.5);
 }
-
 
 .current-planet{
     border-bottom: solid 2px var(--light);
@@ -354,8 +351,6 @@ ul{
 .crew-slider{
     margin: 100px 0;
 }
-
-
 
 .crew-link{
     height: 15px;
