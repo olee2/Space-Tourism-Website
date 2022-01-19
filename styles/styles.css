@@ -907,8 +907,7 @@ ul{
     }
 
     .crew .image img{
-        max-height: none;
-        max-width: 250px;
+        max-height: 350px;
     }
 
     .crew-container{
