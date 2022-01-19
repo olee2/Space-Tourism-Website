@@ -874,6 +874,10 @@ ul{
         width: 250px;
     }
 
+    .destination .image{
+        margin-bottom: 30px;
+    }
+
     .destination .image img{
         width: 200px;
     }
