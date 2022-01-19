@@ -1,18 +1,3 @@
-
-
-//Active class
-/*
-const links = document.querySelectorAll(".list-item");
-
-for (let i = 0; i < links.length; i++) {
-    links[i].addEventListener("click", function() {
-      let current = document.querySelectorAll(".active");
-      current[0].className = current[0].className.replace(" active", "");
-      this.className += " active";
-    });
-  }
-*/
-
 //Function for reading the JSON-file
 function readTextFile(file, callback) {
   var rawFile = new XMLHttpRequest();
@@ -93,8 +78,6 @@ function changeTech(){
   });
 }
 
-console.log(window.screen.width)
-
 //Hamburger Menu
 const hamburger = document.querySelector(".ham");
 const navsub = document.querySelector(".nav-sub");
@@ -139,8 +122,6 @@ for (let i = 0; i < tech.length; i++) {
   });
 }
 
-readTextFile("data.json", function(text){
-    var data = JSON.parse(text); //parse JSON
-});
-
-
+changeTech();
+changeCrew();
+changeDestination();
