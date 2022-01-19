@@ -907,8 +907,8 @@ ul{
     }
 
     .crew .image img{
-        max-height: 250px;
-        
+        max-height: none;
+        max-width: 250px;
     }
 
     .crew-container{
@@ -919,6 +919,7 @@ ul{
 
     .crew .image{
         flex:1;
+        justify-content: center;
     }
 
     .crew-section{
