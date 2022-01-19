@@ -36,7 +36,7 @@ function changeDestination(){
 
 function changeCrew(){
   readTextFile("data.json", function(text){
-    var data = JSON.parse(text); //parse JSON
+    var data = JSON.parse(text); 
     let crewMember = document.querySelector(".current-crew");
     let name = document.querySelector(".crew-name");
     let role = document.querySelector(".role");
@@ -57,7 +57,7 @@ function changeCrew(){
 
 function changeTech(){
   readTextFile("data.json", function(text){
-    var data = JSON.parse(text); //parse JSON
+    var data = JSON.parse(text); 
     let tech = document.querySelector(".active-tech");
     let techH3 = document.querySelector(".tech-h3");
     let techP = document.querySelector(".tech-info");
