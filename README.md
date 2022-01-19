@@ -52,7 +52,7 @@ Other lessons learned:
 - That background blur is not as easy to apply as one might think, especially not in all browsers using the same code. 
 - Be better at naming classes in css. 
 - Be mindful of the structure in the css document so that I don't have to clean up so much at the end. 
-- + + + + 
+- Many more that I cannot recall at the moment. 
 
 
 And last but not least: To always make a plan before starting to code. I tend to just start in one end and go from there, not really taking future pages and parts into account. I write what I need there and then. It get's messy real quick. 
