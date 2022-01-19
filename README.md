@@ -36,7 +36,6 @@ Users should be able to:
 - Flexbox
 - Javascript
 
-
 ### What I learned
 
 What I would consider one of the main lessons is TAKE NOTES OF HELPFUL RESOURCES IN ORDER TO CREDIT THEM LATER. I failed at this during this project, but I will do my best to not repeat the mistake in the future. 
@@ -47,10 +46,14 @@ I can build on the experiences from this project going forward. I am currently s
 
 Other lessons learned: 
 
-	- How to make an interactive hamburger menu in JS/CSS. 
-	- How to access information in a JSON file and apply this to the html. 
-	- How to change parts of an HTML-document in order to make sliders and secondary nav-bars without changing the site url.
-	- That background blur is not as easy to apply as one might think, especially not in all browsers using the same code. 
+- How to make an interactive hamburger menu in JS/CSS. 
+- How to access information in a JSON file and apply this to the html. 
+- How to change parts of an HTML-document in order to make sliders and secondary nav-bars without changing the site url.
+- That background blur is not as easy to apply as one might think, especially not in all browsers using the same code. 
+- Be better at naming classes in css. 
+- Be mindful of the structure in the css document so that I don't have to clean up so much at the end. 
+- + + + + 
+
 
 And last but not least: To always make a plan before starting to code. I tend to just start in one end and go from there, not really taking future pages and parts into account. I write what I need there and then. It get's messy real quick. 
 If I consider the design for desktop, tablet and mobile before deciding to use flexbox over grid, I might have saved me some agony. Just an example among many. 
@@ -61,8 +64,8 @@ This challenge was a collaboration between Frontend Mentor, Scrimba and Kevin Po
 
 Parts of the code that I should have credited others for (but  have not, unfortunately, been able to relocate the sites):
 
-	- All of the code for the function for reading the JSON-file. I found this several places online when trying to find the page where I found it, 
+- All of the code for the function for reading the JSON-file. I found this several places online when trying to find the page where I found it, 
 	so it seems to be a piece of code used by many. I wrote the functions that used this function to add the information to the HTML. 
-	- The code and further information regarding the background blur in the navigation.
-	- Parts of the code for the hamburger menu.
-	- The code that adds the eventlistener to the destination nav, crew slider and technology slider.   
+- The code and further information regarding the background blur in the navigation.
+- Parts of the code for the hamburger menu.
+- The code that adds the eventlistener to the destination nav, crew slider and technology slider.   

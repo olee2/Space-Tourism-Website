@@ -100,7 +100,6 @@ p{
     justify-content: space-around;
 }
 
-
 .column{
     flex-direction: column;
 }
@@ -293,10 +292,6 @@ ul{
     border-bottom: solid 2px var(--light);
 }
 
-.test{
-    flex: 1;
-}
-
 .destination-container{
     width: 400px;
     height: 445px;
@@ -431,17 +426,12 @@ ul{
     align-items: center;
 }
 
-
 @media only screen and (max-width: 1280px){
 
     .container{
         width: 100%;
         max-width: none;
         align-items: center;
-    }
-
-    .technology .container{
-        margin-right: 0;
     }
 
     .home-section{
@@ -459,6 +449,18 @@ ul{
 
     .home{
         background-position: right;
+    }
+
+    .crew-container, .destination-image{
+        margin-left: 50px;
+    }
+
+    .destination-container, .crew .image{
+        margin-right: 50px;
+    }
+
+    .technology .container{
+        margin-right: 0;
     }
 
     .technology .image{
@@ -480,39 +482,44 @@ ul{
         max-width: 100%;
     }
 
-    .crew-container, .destination-image{
-        margin-left: 50px;
-    }
-
-    .destination-container, .crew .image{
-        margin-right: 50px;
-    }
-
 @media only screen and (max-width:996px) {
 
-    .home-text{
-        margin: 50px 0 0 0;
+    h2{
+        font-size: 80px;
+        margin: 20px 0;
     }
 
-    .outer{
-        margin-right: 0px;
+    h3{
+        font-size: 40px;
     }
 
-    .crew-container, .destination-image{
-        margin-left: 0;
+    h4{
+        font-size: 24px;
     }
 
-    .destination-container, .crew .image{
-        margin-right: 0;
+    .h-something{
+        align-self: flex-start;
+        font-size: 20px;
+        margin-left: 20px;
+    }
+
+    .container{
+        flex-direction: column;
+        height: 100%;
+        text-align: center;
+        align-items: center;
+        max-width: none;
+        width: 100%;
+        margin-top: 50px;
+        justify-content: space-between;
     }
 
     .width-100{
         width: 100%;
     }
 
-    .outer:hover{
-        background-color: transparent;
-        transition: 0.3s;   
+    .logo{
+        margin-left: 20px;
     }
 
     nav{
@@ -531,30 +538,71 @@ ul{
         margin-top: 0;
     }
 
-    .container{
-        flex-direction: column;
-        height: 100%;
-        text-align: center;
-        align-items: center;
-        max-width: none;
-        width: 100%;
-        margin-top: 50px;
-        justify-content: space-between;
-    }
-
     .home{
         background-image: url("../assets/home/background-home-tablet.jpg");
     }
 
+    .home-text{
+        margin: 50px 0 0 0;
+    }
+
+    .outer{
+        margin-right: 0px;
+    }
+
+    .outer:hover{
+        background-color: transparent;
+        transition: 0.3s;   
+    }
+
+    .crew-container, .destination-image{
+        margin-left: 0;
+    }
+
+    .destination-container, .crew .image{
+        margin-right: 0;
+    }
 
     .destination{
         background-image: url("../assets/destination/background-destination-tablet.jpg");
         background-size: 996px auto;
     }
 
+    .destination img{
+        max-width: 350px;
+    }
+
+    .destination-info{
+        justify-content: space-around;
+    }
+
+    .destination p{
+        padding: 0 40px;
+    }
+
+    .destination-nav{
+        justify-content: space-between;
+        width: 300px;
+        align-self: center;
+    }
+
+    .planet-link{
+        margin-right: 0;
+    }
+
+    .destination-container{
+        width: auto;
+        max-width: 600px;
+        height: auto;
+        margin-bottom: 50px;
+    }
+
+    .destination .image{
+        margin-bottom: 30px;
+    }
+
     .crew{
         background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.25)), url("../assets/crew/background-crew-tablet.jpg");
-
     }
 
     .crew p{
@@ -576,13 +624,11 @@ ul{
         align-items: center;
         display: flex;
         flex-direction: column;
-        
     }
 
     .crew-container{
         width: 100%;
         flex: 2;
-        
     }
 
     .crew .image{
@@ -603,63 +649,6 @@ ul{
 
     .crew-slider{
         margin: 40px 0;
-    }
-
-    .h-something{
-        align-self: flex-start;
-        font-size: 20px;
-        margin-left: 20px;
-    }
-
-    .destination-container{
-        width: auto;
-        max-width: 600px;
-        height: auto;
-        margin-bottom: 50px;
-    }
-
-
-    .planet-link{
-        margin-right: 0;
-    }
-
-    .destination-nav{
-        justify-content: space-between;
-        width: 300px;
-        align-self: center;
-    }
-
-    .logo{
-        margin-left: 20px;
-    }
-
-    h2{
-        font-size: 80px;
-        margin: 20px 0;
-    }
-
-    h3{
-        font-size: 40px;
-    }
-
-    h4{
-        font-size: 24px;
-    }
-
-    .destination img{
-        max-width: 350px;
-    }
-
-    .destination-info{
-        justify-content: space-around;
-    }
-
-    .destination p{
-        padding: 0 40px;
-    }
-
-    .part{
-        flex-direction: column;
     }
 
     .tech-slider{
@@ -689,6 +678,7 @@ ul{
         flex: auto;
         margin: 0;
         justify-content: flex-start;
+        flex-direction: column;
     }
 
     .tech-slider{
@@ -870,7 +860,6 @@ ul{
     }
 
     .destination .image{
-        margin-bottom: 30px;
         max-width: 270px;
         align-self: center;
     }
@@ -940,7 +929,7 @@ ul{
 
     .technology{
         background-image: url(../assets/technology/background-technology-mobile.jpg);
-        background-size: auto 800px;
+        background-size: auto 1000px;
         background-repeat: no-repeat;
     }
 }
