@@ -316,14 +316,17 @@ ul{
 .crew{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/crew/background-crew-desktop.jpg");
     background-size: cover;
+    
 }
 
 .crew-section{
     height: 100%;
+    
 }
 
 .crew p{
     max-width: 500px;
+    transition: all 0.3s ease-in-out;
 }
 
 .crew h4{
@@ -595,6 +598,7 @@ ul{
         max-width: 600px;
         height: auto;
         margin-bottom: 50px;
+        
     }
 
     .destination .image{
