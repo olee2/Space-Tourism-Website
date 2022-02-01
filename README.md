@@ -37,8 +37,6 @@ Users should be able to:
 
 ### What I learned
 
-What I would consider one of the main lessons is TAKE NOTES OF HELPFUL RESOURCES IN ORDER TO CREDIT THEM LATER. I failed at this during this project, but I will do my best to not repeat the mistake in the future. 
-
 I had almost no previous experience using JS for web-development. I do, however, have intermediate knowledge of JS as a programming language and was able to build on that when looking for solutions to my problems. 
 I learned a lot about how JS can be used to manipulate html and the term DOM (Document Object Model) now makes more sense. I know that my way of using JS in this project is probably not even close to optimal, but hopefully
 I can build on the experiences from this project going forward. I am currently studying web-development and JS is the area of focus in the next couple of weeks and months. 
