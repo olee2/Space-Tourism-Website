@@ -51,5 +51,5 @@ Other lessons learned:
 - That background blur is not as easy to apply as one might think, especially not in all browsers using the same code. 
 - Be better at naming classes in css. 
 - Be mindful of the structure in the css document so that I don't have to clean up so much at the end. 
-- Many more that I cannot recall at the moment. 
+
 
