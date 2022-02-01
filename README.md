@@ -10,7 +10,6 @@ This is a solution to the [Space tourism website challenge on Frontend Mentor](h
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -54,18 +53,3 @@ Other lessons learned:
 - Be mindful of the structure in the css document so that I don't have to clean up so much at the end. 
 - Many more that I cannot recall at the moment. 
 
-
-And last but not least: To always make a plan before starting to code. I tend to just start in one end and go from there, not really taking future pages and parts into account. I write what I need there and then. It get's messy real quick. 
-If I consider the design for desktop, tablet and mobile before deciding to use flexbox over grid, I might have saved me some agony. Just an example among many. 
-
-This challenge was a collaboration between Frontend Mentor, Scrimba and Kevin Powell. Kevin's solution is available and I will now have a look at what he has done to develop the same site. There will be several lessons available for me there. 
-
-## Acknowledgments
-
-Parts of the code that I should have credited others for (but  have not, unfortunately, been able to relocate the sites):
-
-- All of the code for the function for reading the JSON-file. I found this several places online when trying to find the page where I found it, 
-	so it seems to be a piece of code used by many. I wrote the functions that used this function to add the information to the HTML. 
-- The code and further information regarding the background blur in the navigation.
-- Parts of the code for the hamburger menu.
-- The code that adds the eventlistener to the destination nav, crew slider and technology slider.   
